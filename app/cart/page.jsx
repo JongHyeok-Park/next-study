@@ -1,7 +1,20 @@
 export default function Cart() {
   return (
     <div>
-      <h1 className="title">카트 페이지입니다.</h1>
+      <h4 className="title">Cart</h4>
+      <CartItem />
+      <CartItem />
+      <CartItem />
     </div>
   )
 } 
+
+function CartItem() {
+  return (
+    <div className="cart-item">
+      <p>상품명</p>
+      <p>$40</p>
+      <p>1개</p>
+    </div>
+  )
+}

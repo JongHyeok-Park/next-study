@@ -7,6 +7,7 @@ export default function List() {
         products.map((item, i) => {
           return (
             <div className="food" key={i}>
+              <img src={'/food' + i + '.png'} alt="food" width="100%"/>
               <h4>{item} $40</h4>
             </div>
           )
